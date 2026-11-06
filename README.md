@@ -1,5 +1,7 @@
 # Computer Use 插件（Windows 桌面控制）
 
+[English](README.en.md) | 中文
+
 > English summary: a Windows-only computer-use plugin for DeepSeek Harness. It exposes screenshot, mouse, keyboard, and window control, plus UI Automation helpers that find, click, read, and fill controls by their accessible text. Implemented with Windows PowerShell + user32 `SendInput`/`CopyFromScreen` + UI Automation, with no native Node modules and no build step.
 
 给 DeepSeek Harness 提供「操作真实桌面」能力的插件：截屏、鼠标、键盘、窗口管理，以及按文字定位控件、点击、等待、读窗口文本、往输入框写内容等高层封装，共 9 个模型工具。
