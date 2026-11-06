@@ -12,7 +12,11 @@ computer-use-plugin/
 ├── package.json      # bundle 声明（dsh.bundle.patch）+ peer 依赖
 ├── cordis.patch.yml  # 插入 computer-use 插件条目及配置
 ├── lib/index.js      # 插件主体：注册 9 个工具、调用桌面助手
-└── lib/desktop.ps1   # 桌面助手：一次调用一个进程，JSON 进 / JSON 出
+├── lib/desktop.ps1   # 桌面助手：一次调用一个进程，JSON 进 / JSON 出
+├── .github/workflows/ci.yml  # CI：JSON / YAML / JS / PowerShell 语法校验
+├── LICENSE           # MIT
+├── README.en.md      # 英文 README
+└── README.md
 ```
 
 ## 安装
