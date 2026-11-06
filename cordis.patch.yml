@@ -1,0 +1,14 @@
+# Computer-use layer: registers the desktop-control tools on every Agent.
+# Reload trigger: keep this line when editing to force HMR recomposition.
+- insert:
+    - id: computer-use
+      name: '@local/dsh-computer-use'
+      config:
+        # Directory for screenshots. Leave empty to use the OS temp directory.
+        screenshotDir: ''
+        # Downscale screenshots wider than this (0 keeps native resolution).
+        maxImageWidth: 1600
+        # Set to false to keep screenshots and window management but block input injection.
+        allowInput: true
+        # Deadline for one desktop action, in milliseconds.
+        timeoutMs: 30000

@@ -1,0 +1,42 @@
+{
+  "name": "@local/dsh-computer-use",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Windows desktop computer-use tools for DeepSeek Harness: screenshots, mouse, keyboard, and window control.",
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "computer-use",
+    "desktop-automation",
+    "ui-automation",
+    "windows"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwx07426/dsh-computer-use.git"
+  },
+  "author": "cwx07426",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": "0.2.2-rc.1"
+  }
+}
